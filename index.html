@@ -1,15 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>My Website</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <style>
+        h1 {
+            color: burlywood;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+        p {
+            color: green;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+        }
+        /* Added a class for the image to handle the layout */
+        .left-img {
+            float: left;
+            margin-right: 15px; /* Adds space between image and text */
+            margin-bottom: 10px;
+            width: 300px;
+            height: 200px;
+        }
+        footer {
+            background-color: brown;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+        }
+        /* Ensures the footer doesn't overlap text if the page is short */
+        body {
+            padding-bottom: 60px;
+        }
+    </style>
 </head>
 <body>
     <h1>Starter HTML PAGE</h1>
     <h2>Welcome to my Website!</h2>
-    <p><img src="images/HTML.jpg" alt="HTML" style="width: 300px; height: 200px; float: center;margin-left:10px;"></p>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat cupiditate ut aut quo ad quis soluta ducimus dignissimos, fuga amet maxime, labore provident maiores error molestias, architecto reprehenderit nulla eius.</p>
 
+    <img src="images/HTML.jpg" alt="HTML" class="left-img">
+
+    <p>
+        I am incredibly eager to learn more about web development and how websites are built from the ground up! 
+        This is ICS 2026 Web Development, and I'm excited to see how interactivity and design come together to create 
+        amazing online experiences.
+    </p>
+
+    <footer>
+        <p style="color: white;">&copy; 2026 My Website. All rights reserved.</p>
+    </footer>
 </body>
 </html>
